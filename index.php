@@ -53,7 +53,7 @@ $opts = array('http' =>
  array(
 
        'header'    => ['Content-type: application/json' , 'Accept: application/json', 'Authorization: Basic '.base64_encode("$username:$password")], 'method'    => 'GET',
- 'content' => http_build_query($json)));
+ 'content' => http_build_query($requestBody)));
 
 
 
