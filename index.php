@@ -17,6 +17,7 @@ if ($method == 'POST')
 	$json = json_decode($requestBody);
 
 	$number = $json->result->parameters->number;
+	$userChoice= $json->result->parameters->UserChoice;
 
 	$username = 'sguna002';
 
@@ -46,7 +47,7 @@ if ($method == 'POST')
 		       $Status_MSG = "Your Cognizant ID $LanID has been validated. Thanks";
 
 		    // $URL="http://66.25.18.67:5555/rest/Default/new_restExp/_get?num1=12&num2=15";
-        $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/new_rest/_get?number($number)";
+        $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/new_rest/_get?number=$number&userchoice=$userChoice";
 
 $opts = array('http' =>
 
