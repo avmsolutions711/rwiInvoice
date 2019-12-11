@@ -51,11 +51,7 @@ if ($method == 'POST')
 		    // $URL="http://66.25.18.67:5555/rest/Default/new_restExp/_get?num1=12&num2=15";
         $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/new_rest/_get?number=$number&userChoice=$userChoice&userStatus=$userStatus";
 		     
-	     
-	 case "no":
-		     $Status_MSG="Thanks for reaching 7-Eleven B2B Support.Goodbye";
-
-$opts = array('http' =>
+	     $opts = array('http' =>
 
  array(
 
@@ -81,12 +77,16 @@ $Status_MSG = $obj->{'invoiceStatus'};
 
 
 		    	  break;
+	case "no":
+		     $Status_MSG="Thanks for reaching 7-Eleven B2B Support.Goodbye";
+		     
+		     break;
 
             
 
         default:
 
-            $Status_MSG = "Your Cognizant  ID is not valid. Thanks";
+            $Status_MSG = "I couldn't answer ,Pleease reach out to B2BSupport@7-11.com. Thanks";
 
             break;
 
