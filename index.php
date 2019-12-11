@@ -54,7 +54,7 @@ if ($method == 'POST')
 		     
 	     
 	 case "no":
-		     $Status_MSG="Thanks for reaching 7-Eleven B2B Support.Goodbye"
+		     $Status_MSG="Thanks for reaching 7-Eleven B2B Support.Goodbye";
 
 $opts = array('http' =>
 
