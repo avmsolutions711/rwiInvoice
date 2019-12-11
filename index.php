@@ -70,7 +70,7 @@ $obj = json_decode($jsonStr);
 
 		    // $Status_MSG = $jsonStr;
 
-$Status_MSG = $obj->{'sumTotal'};
+$Status_MSG = $obj->{'invoiceStatus'};
 
 // $Status_MSG = "Your Cognizant ID $LanID/boss has been validated. Thanks";
 
