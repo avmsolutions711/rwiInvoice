@@ -79,7 +79,7 @@ $Status_MSG = $obj->{'invoiceStatus'};
 
 		    	  break;
 	case "no":
-		     $Status_MSG="Thanks for reaching 7-Eleven B2B Support.Goodbye";
+		     $Status_MSG="oops!! we got no from you. Please enter the operation name do you want to perform!!!  ";
 		     
 		     break;
 
