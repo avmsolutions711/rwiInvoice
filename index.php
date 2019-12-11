@@ -18,8 +18,8 @@ if ($method == 'POST')
 
 	//$number = $json->request->body->queryResult->parameters->number;
 	//$userChoice= $json->request->body->queryResult->parameters->UserChoice;
-	$number='12356'
-	$userChoice='yes'
+	$number='12356';
+	$userChoice='yes';
 
 	$username = 'sguna002';
 
