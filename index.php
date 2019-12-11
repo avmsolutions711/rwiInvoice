@@ -18,7 +18,7 @@ if ($method == 'POST')
 
 	$number = $json->queryResult->parameters->number;
 	$userChoice= $json->queryResult->parameters->UserChoice;
-	$userStatus= $json->queryResult->parameters->UserStatus;
+	$userStatus= $json->queryResult->parameters->userStatus;
 	//$number='12356';
 	//$userChoice='yes';
 
