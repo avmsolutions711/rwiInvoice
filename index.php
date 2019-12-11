@@ -103,7 +103,7 @@ $Status_MSG = $obj->{'invoiceStatus'};
 
     $response->fulfillmentText = "Response is " . $Status_MSG;
 
-    $response->fulfillmentText = "Response is" . $Status_MSG;
+    $response->fulfillmentText = "Response is " . $Status_MSG;
 
     $response->source = "webhook";
 
