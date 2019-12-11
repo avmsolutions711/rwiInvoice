@@ -38,18 +38,23 @@ if ($method == 'POST')
 
     
 
-     switch ($LanID) {
+     switch ($userChoice) {
 
         
 
-        case "sguna002":
+        case "Yes":
 
 		  
 
-		       $Status_MSG = "Your Cognizant ID $LanID has been validated. Thanks";
-
+		       
 		    // $URL="http://66.25.18.67:5555/rest/Default/new_restExp/_get?num1=12&num2=15";
         $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/new_rest/_get?number=$number&userChoice=$userChoice";
+		     
+	case "Reprocess"
+		 $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/new_rest/_get?number=$number&userChoice=$userChoice";
+		     
+	case "Resubmit"
+		 $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/new_rest/_get?number=$number&userChoice=$userChoice";
 
 $opts = array('http' =>
 
