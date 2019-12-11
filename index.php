@@ -16,10 +16,10 @@ if ($method == 'POST')
 
 	$json = json_decode($requestBody);
 
-	//$number = $json->request->body->queryResult->parameters->number;
-	//$userChoice= $json->request->body->queryResult->parameters->UserChoice;
-	$number='12356';
-	$userChoice='yes';
+	$number = $json->request->body->queryResult->parameters->number;
+	$userChoice= $json->request->body->queryResult->parameters->UserChoice;
+	//$number='12356';
+	//$userChoice='yes';
 
 	$username = 'sguna002';
 
