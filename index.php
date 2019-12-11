@@ -96,9 +96,9 @@ $Status_MSG = $obj->{'sumTotal'};
 
     $response = new \stdClass();
 
-    $response->speech = "ulaganayagan" . $Status_MSG;
+    $response->fulfillmentText = "ulaganayagan" . $Status_MSG;
 
-    $response->displayText = "ulaganayagan" . $Status_MSG;
+    $response->fulfillmentText = "ulaganayagan" . $Status_MSG;
 
     $response->source = "webhook";
 
@@ -114,9 +114,9 @@ else
 
     $response = new \stdClass();
 
-    $response->speech = "This method not allowed here";
+    $response->fulfillmentText = "This method not allowed here";
 
-    $response->displayText = "This method not allowed here";
+    $response->fulfillmentText = "This method not allowed here";
 
     $response->source = "webhook";
 
