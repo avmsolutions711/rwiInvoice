@@ -18,6 +18,7 @@ if ($method == 'POST')
 
 	$number = $json->queryResult->parameters->number;
 	$userChoice= $json->queryResult->parameters->UserChoice;
+	$userStatus= $json->queryResult->parameters->UserStatus;
 	//$number='12356';
 	//$userChoice='yes';
 
@@ -48,13 +49,12 @@ if ($method == 'POST')
 
 		       
 		    // $URL="http://66.25.18.67:5555/rest/Default/new_restExp/_get?num1=12&num2=15";
-        $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/new_rest/_get?number=$number&userChoice=$userChoice";
+        $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/new_rest/_get?number=$number&userChoice=$userChoice&
+		userStatus=$userStatus";
 		     
-	case "Reprocess"
-		 $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/new_rest/_get?number=$number&userChoice=$userChoice";
-		     
-	case "Resubmit"
-		 $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/new_rest/_get?number=$number&userChoice=$userChoice";
+	     
+	 case "No":
+		     $Status_MSG="Thanks for reaching 7-Eleven B2B Support.Goodbye"
 
 $opts = array('http' =>
 
