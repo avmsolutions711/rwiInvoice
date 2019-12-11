@@ -43,7 +43,7 @@ if ($method == 'POST')
 
         
 
-        case "Yes":
+        case "yes":
 
 		  
 
@@ -53,7 +53,7 @@ if ($method == 'POST')
 		userStatus=$userStatus";
 		     
 	     
-	 case "No":
+	 case "no":
 		     $Status_MSG="Thanks for reaching 7-Eleven B2B Support.Goodbye"
 
 $opts = array('http' =>
