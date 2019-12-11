@@ -16,8 +16,8 @@ if ($method == 'POST')
 
 	$json = json_decode($requestBody);
 
-	$number = $json->result->parameters->number;
-	$userChoice= $json->result->parameters->UserChoice;
+	$number = $json->queryResult->parameters->number;
+	$userChoice= $json->queryResult->parameters->UserChoice;
 	//$number='12356';
 	//$userChoice='yes';
 
