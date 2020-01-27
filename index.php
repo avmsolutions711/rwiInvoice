@@ -50,7 +50,7 @@ if ($method == 'POST')
 
 		       
 		    // $URL="http://66.25.18.67:5555/rest/Default/new_restExp/_get?num1=12&num2=15";
-        $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/new_rest/_get?number=$number&userChoice=$userChoice&userStatus=$action";
+        $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/new_rest/_get?number=$number&userChoice=$userChoice&userStatus=$action&suppliernumber=$suppliernumber&emailid=$emailid";
 		     
 	     $opts = array('http' =>
 
