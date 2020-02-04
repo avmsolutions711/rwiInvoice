@@ -20,6 +20,8 @@ if ($method == 'POST')
 	$userChoice= $json->queryResult->parameters->UserChoice;
 	$userStatus= $json->queryResult->parameters->userStatus;
 	$action=$json->queryResult->action;
+	$suppliernumber = $json->queryResult->parameters->suppliernumber;
+	$emailid= $json->queryResult->parameters->emailid;
 	//$number='12356';
 	//$userChoice='yes';
 
